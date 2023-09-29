@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-4"></div>
+            <div id="main" class="col-4 pb-2 px-2 pe-2">
+
+                <div class="row mt-3 pe-3">
+                    <p class="casio fs-5 ms-4 ps-3">CASIO</p>
+                    <div class="input-group input-group-lg rounded-top px-4 ms-2">
+                        <input id="result" class="form-control fs-1 fw-bolder border border-2 border-secondary pe-3" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                </div>
+        
+                <div id="row-start" class="row mx-1 ms-1 px-2 pe-3">
+                    <div class="col-3"><button onclick="clearBox()" type="button" id="b1" class="btn mx-auto d-block fs-4 text-danger">AC</button></div>
+                    <div class="col-3"><button onclick="removeLast()" type="button" id="b1" class="btn mx-auto d-block fs-4 text-danger"><i class="fa-solid fa-delete-left"></i></button></div>
+                    <div class="col-3"><button onclick="display('%')" type="button" id="b1" class="btn mx-auto d-block fs-4 text-warning">&#37;</button></div>
+                    <div class="col-3"><button onclick="display('/')" type="button" id="b1" class="btn mx-auto d-block fs-4 text-warning">&#247;</button></div>
+                </div>
+        
+                <div class="row mx-1 ms-1 px-2 pe-3">
+                    <div class="col-3"><button onclick="display(7)" type="button" id="b1" class="btn mx-auto d-block fs-4">7</button></div>
+                    <div class="col-3"><button onclick="display(8)" type="button" id="b1" class="btn mx-auto d-block fs-4">8</button></div>
+                    <div class="col-3"><button onclick="display(9)" type="button" id="b1" class="btn mx-auto d-block fs-4">9</button></div>
+                    <div class="col-3"><button onclick="display('*')" type="button" id="b1" class="btn mx-auto d-block fs-4 text-warning">&#215;</button></div>
+                </div>
+        
+                <div class="row mx-1 ms-1 px-2 pe-3">
+                    <div class="col-3"><button onclick="display(4)" type="button" id="b1" class="btn mx-auto d-block fs-4">4</button></div>
+                    <div class="col-3"><button onclick="display(5)" type="button" id="b1" class="btn mx-auto d-block fs-4">5</button></div>
+                    <div class="col-3"><button onclick="display(6)" type="button" id="b1" class="btn mx-auto d-block fs-4">6</button></div>
+                    <div class="col-3"><button onclick="display('-')" type="button" id="b1" class="btn mx-auto d-block fs-4 text-warning">&#8722;</button></div>
+                </div>
+        
+                <div class="row mx-1 ms-1 px-2 pe-3">
+                    <div class="col-3"><button onclick="display(1)" type="button" id="b1" class="btn mx-auto d-block fs-4">1</button></div>
+                    <div class="col-3"><button onclick="display(2)" type="button" id="b1" class="btn mx-auto d-block fs-4">2</button></div>
+                    <div class="col-3"><button onclick="display(3)" type="button" id="b1" class="btn mx-auto d-block fs-4">3</button></div>
+                    <div class="col-3"><button onclick="display('+')" type="button" id="b1" class="btn mx-auto d-block fs-4 text-warning">&#43;</button></div>
+                </div>
+        
+                <div id="row-end" class="row mx-1 ms-1 px-2 pe-3">
+                    <div class="col-3"><button onclick="display(0)" type="button" id="b1" class="btn mx-auto d-block fs-4">0</button></div>
+                    <div class="col-3"><button onclick="display('00')" type="button" id="b1" class="btn mx-auto d-block fs-4">00</button></div>
+                    <div class="col-3"><button onclick="display('.')" type="button" id="b1" class="btn mx-auto d-block fs-4 text-warning"><b>.</b></button></div>
+                    <div class="col-3"><button onclick="evalExp()" type="button" id="b1" class="btn mx-auto d-block fs-4 text-warning">&#61;</button></div>
+                </div>
+
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
